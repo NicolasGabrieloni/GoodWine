@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-family: 'Parisienne', cursive;
+
+}
+
+/* GRILLA */
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 12% 40% 40% 8%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main aside"
+        "main main aside"
+        "footer footer footer";
+    background-image: url(../multimedia/fondo4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.containerG {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 12% 40% 40% 8%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    background-image: url(../multimedia/fondo4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: rgba(0, 0, 0, 0.76);
+    height: 116px;
+    top: 0;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.aside {
+    grid-area: aside;
+
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.76);
+    height: 77px;
+    margin-top: auto;
+}
+
+
+/* HEADER */
+.nav {
+    display: inline-flex;
+    gap: 30px;
+    float: right;
+    list-style: none;
+    font-size: 25px;
+    margin-top: -102px;
+    margin-right: 30px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    text-shadow: 5px 3px 4px black;
+}
+
+.nav li a:hover {
+    border-bottom: 4px solid rgb(86, 7, 12);
+}
+
+.logo {
+    display: inline;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-shadow: 8px 4px 5px rgb(20, 20, 20);
+    margin-left: 50px;
+}
+
+.logo span {
+    color: rgb(86, 7, 12);
+    margin-left: -65px;
+}
+
+.logo i {
+    margin-left: 5px;
+    font-size: 80px;
+    color: rgb(86, 7, 12);
+}
+
+/* MAIN */
+.caja1 {
+    background-color: rgba(0, 0, 0, 0.685);
+    box-shadow: 2px 6px 10px 5px rgb(29, 29, 29);
+    margin-top: 200px;
+    height: 400px;
+    width: 500px;
+    color: white;
+    font-size: 32px;
+    text-shadow: 8px 4px 5px rgb(20, 20, 20);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.caja1 h2 {
+    color: rgb(133, 11, 19);
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.caja2 {
+    background-color: rgba(0, 0, 0, 0.685);
+    box-shadow: 2px 6px 10px 5px rgb(29, 29, 29);
+    margin-top: 200px;
+    height: 400px;
+    width: 500px;
+    color: white;
+    font-size: 32px;
+    text-shadow: 8px 4px 5px rgb(20, 20, 20);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.caja2 h3 {
+    color: rgb(133, 11, 19);
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+/* ASIDE */
+.sabores {
+    box-shadow: 2px 6px 10px 5px rgb(29, 29, 29);
+    background-color: rgba(243, 247, 252, 0.616);
+    margin-top: 100px;
+    height: 600px;
+    width: 450px;
+    font-size: 32px;
+    text-shadow: 8px 4px 5px rgb(20, 20, 20);
+    border-radius: 20px;
+}
+
+.sabores h4 {
+    color: black;
+    font-size: 60px;
+    margin-left: 40px;
+    padding-top: 30px;
+}
+
+.sabores ul {
+    margin-top: 60px;
+    color: black;
+    margin-left: 80px;
+}
+
+.sabores ul li {
+    margin-top: 6px;
+}
+
+/* FOOTER */
+.redesSociales {
+    text-align: center;
+    margin: 20px
+}
+
+.redesSociales a {
+    margin: 35px;
+    font-size: 40px;
+    color: white;
+}
+
+.redesSociales a:hover {
+    border-bottom: 2px solid rgb(86, 7, 12);
+}
+
+
+/* CATALOGO */
+.cards {
+    display: flex;
+    gap: 80px;
+    margin-left: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+.main h1 {
+    display: inline;
+    position: absolute;
+    margin-top: -100px;
+    color: rgb(112, 10, 16);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.685);
+    box-shadow: 2px 6px 10px 5px rgb(29, 29, 29);
+    border-radius: 20px;
+    padding: 20px;
+    width: 1100px;
+    text-align: center;
+}
+.card {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(112, 10, 16);
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 6px 10px 5px rgb(29, 29, 29);
+    text-shadow: 8px 4px 5px rgb(20, 20, 20);
+}
+.imagen {
+    background-image: url(../multimedia/botella.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+}
+.informacion p {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.aside h2 {
+    display: inline;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 10px;
+    color: rgb(253, 253, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.685);
+    box-shadow: 2px 6px 10px 5px rgb(29, 29, 29);
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+}
+.vinoBlanco {
+    display: flex;
+    gap: 80px;
+    margin-left: -92px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+.card2 {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 500px;
+    width: 300px;
+    box-shadow: 2px 6px 10px 5px rgb(29, 29, 29);
+    text-shadow: 8px 4px 5px rgb(20, 20, 20);
+    text-align: center;
+    border-radius: 20px;
+}
+.imagen2 {
+    background-image: url(../multimedia/botella2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+}
+.informacion2{
+    background-color: rgb(253, 253, 208);
+    height: 60px;
+}
+.informacion2 p{
+    padding: 5px;
+}
+
+
+/* GALERIA */
+.galeria{
+    columns: 4 380px;
+    column-gap: 10px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+.galeria img {
+    width: 360px;
+    box-shadow: 5px 5px 7px 2px black;
+}
+
+/* OPINIONES */
+.main h4{
+    font-size: 65px;
+    color: white;
+    position: absolute;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.438);
+    display: inline;
+    width: 1700px;
+    height: 90px;
+    text-align: center;
+}
+.opinion {
+    background-color: rgba(240, 248, 255, 0.452);
+    height: 600px;
+    width: 460px;
+    margin-top: 160px;
+    text-align: center;
+}
+.opinion img{
+    width: 460px;
+    height: 290px;
+}
+.opinion b{
+    font-size: 30px;
+}
+.opinion p{
+    font-size: 30px;
+    color: white;
+}
+
+/* CONTACTO */
+.contacto{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+
+}
+.formulario{
+    height: 600px;
+    width: 400px;
+    background-color: rgba(243, 247, 252, 0.747);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    vertical-align: middle;
+}
+.formulario p{
+    margin-top: 40px;
+}
+
+
+
+
+/* RESPONSIVE DESIGNE - MOBILE LAST */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "aside aside aside"
+            "footer footer footer";
+    }
+
+    /* HEADER */
+    .header {
+        display: inline-flex;
+        align-content: space-between;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        margin-left: -20px;
+        font-size: 70px;
+    }
+    .nav {
+        padding-top: 70px;
+    }
+
+    /* MAIN */
+    .main {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja1 {
+        margin-top: 10px;
+    }
+    .caja2 {
+        margin-top: 40px;
+    }
+
+    /* CATALOGO */
+    .main h1{
+        margin-top: -810px;
+    }
+    .cards{
+        margin-top: -670px;
+        margin-left: 230px;
+    }
+    .vinoBlanco{
+        margin-top: 1400px;
+        margin-left: -170px;
+    }
+    .aside h2{
+        margin-top: 1250px;
+        margin-left: -50px;
+    }
+
+    /* OPINIONES */
+    .containerG .main{
+        margin-top: -100px;
+    }
+    .opinion{
+        margin-top: 80px;
+    }
+    .containerG .main h4{
+        margin-top: -22px;
+    }
+
+    /* CONTACTO */
+    .formulario{
+        margin-top: 200px;
+    }
+
+    /* GALERIA */
+    .galeria{
+        columns: 2 260px;
+        column-gap: 50px;
+        margin-bottom: 100px;
+        margin-left: 70px;
+        margin-top: 34px;
+    }
+    .galeria img {
+        width: 260px;
+        box-shadow: 5px 5px 7px 2px black;
+    }
+
+    /* ASIDE */
+    .aside {
+        margin-left: 160px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    /* FOOTER */
+    .redesSociales {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+    width: 420px;
+    }
+
+    /* HEADER */
+    .header {
+        width: 100%;
+        height: 25vh;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-top: 28px;
+        font-size: 70px;
+        margin-left: -38px;
+    }
+    .logo span {
+        margin-left: -28px;
+    }
+    .nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 26px;
+        margin-left: 57px;
+    }
+    .nav ul li {
+        padding: 1px;
+    }
+
+    /* FOOTER */
+    .redesSociales {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 20px;
+        height: 20vh;
+        bottom: 0%;
+    }
+
+    /* MAIN */
+
+    .caja1 {
+        width: 350px;
+        height: 450px;
+        margin-left: -45px;
+    }
+    .caja2 {
+        width: 350px;
+        height: 450px;
+        margin-left: -45px;
+    }
+
+    /* ASIDE */
+    .aside {
+        margin-top: 160px;
+    }
+    .sabores {
+        margin-left: -148px;
+        width: 350px;
+        height: 650px;
+        margin-bottom: -140px;
+    }
+
+    /* CATALOGO */
+    .main h1{
+        margin-top: -744px;
+    }
+    .cards{
+        margin-left: 38px;
+        margin-top: -616px;
+    }
+    .aside h2{
+        margin-top: 1100px;
+        margin-left: -230px;
+    }
+    .vinoBlanco{
+        margin-top: 1250px;
+        margin-left: -200px;
+    }
+
+    /* OPINIONES */
+    .containerG .main{
+        margin-top: 75px;
+    }
+    .containerG .main h4{
+        margin-top: -27px;
+        font-size: 37px;
+    }
+    .opinion{
+        height: 400px;
+        width: 230px;
+    }
+    .opinion img{
+        width: 230px;
+        height: 145px;
+    }
+    .opinion p{
+        font-size: 20px;
+    }
+}
