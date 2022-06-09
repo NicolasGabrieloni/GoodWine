@@ -108,6 +108,8 @@ html {
     font-size: 80px;
     color: rgb(86, 7, 12);
 }
+        /* INDEX */
+
 
 /* MAIN */
 .caja1 {
@@ -229,6 +231,9 @@ html {
     box-shadow: 2px 6px 10px 5px rgb(29, 29, 29);
     text-shadow: 8px 4px 5px rgb(20, 20, 20);
 }
+.card:hover{
+    transform: scale(1.02);
+}
 .imagen {
     background-image: url(../multimedia/botella.jpg);
     background-size: cover;
@@ -276,6 +281,9 @@ html {
     text-shadow: 8px 4px 5px rgb(20, 20, 20);
     text-align: center;
     border-radius: 20px;
+}
+.card2:hover{
+    transform: scale(1.02);
 }
 .imagen2 {
     background-image: url(../multimedia/botella2.jpg);
