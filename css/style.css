@@ -108,7 +108,6 @@ html {
     font-size: 80px;
     color: rgb(86, 7, 12);
 }
-        /* INDEX */
 
 
 /* MAIN */
@@ -123,6 +122,12 @@ html {
     text-shadow: 8px 4px 5px rgb(20, 20, 20);
     text-align: center;
     border-radius: 20px;
+}
+.caja1:hover{
+    transform: scale(1.03);
+}
+.caja2:hover{
+    transform: scale(1.03);
 }
 
 .caja1 h2 {
@@ -160,11 +165,10 @@ html {
     font-size: 32px;
     text-shadow: 8px 4px 5px rgb(20, 20, 20);
     border-radius: 20px;
-    animation-name: saboreskey;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
 }
-
+.sabores:hover{
+    transform: scale(1.03);
+}
 .sabores h4 {
     color: black;
     font-size: 60px;
@@ -369,22 +373,6 @@ html {
 }
 .formulario p{
     margin-top: 40px;
-}
-
-
-@keyframes saboreskey{
-    0%{
-        background-color: rgba(243, 247, 252, 0.616);
-    }
-    50%{
-        background-color: rgba(201, 59, 69, 0.63);
-    }
-    75%{
-        background-color: rgba(201, 59, 69, 0.63);
-    }
-    100%{
-        background-color: rgba(243, 247, 252, 0.616);
-        } 
 }
 
 /* RESPONSIVE DESIGNE - MOBILE LAST */
