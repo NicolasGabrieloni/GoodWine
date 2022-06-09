@@ -160,6 +160,9 @@ html {
     font-size: 32px;
     text-shadow: 8px 4px 5px rgb(20, 20, 20);
     border-radius: 20px;
+    animation-name: saboreskey;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
 
 .sabores h4 {
@@ -311,6 +314,9 @@ html {
     width: 360px;
     box-shadow: 5px 5px 7px 2px black;
 }
+.galeria img:hover{
+    transform: scale(1.07);
+}
 
 /* OPINIONES */
 .main h4{
@@ -366,7 +372,20 @@ html {
 }
 
 
-
+@keyframes saboreskey{
+    0%{
+        background-color: rgba(243, 247, 252, 0.616);
+    }
+    50%{
+        background-color: rgba(201, 59, 69, 0.63);
+    }
+    75%{
+        background-color: rgba(201, 59, 69, 0.63);
+    }
+    100%{
+        background-color: rgba(243, 247, 252, 0.616);
+        } 
+}
 
 /* RESPONSIVE DESIGNE - MOBILE LAST */
 @media (max-width: 768px) {
